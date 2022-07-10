@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Catalogue Movie</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cari">Search</string>
+    <string name="nama_movie">Nama Movie</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="year">Year</string>
+    <string name="search">Search</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="home">Home</string>
+    <string name="detail">Detail</string>
+    <string name="share">Share</string>
+    <string name="release_date">Release Date</string>
+    <string name="Overview">Overview</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="add">Added to Favorite</string>
+    <string name="remove">Removed from Favorite</string>
+    <string name="appwidget_text">FAVORITE MOVIES</string>
+    <string name="empty_text">NO DATA</string>
+
+    <string name="reminderSaveDaily">Save Reminder Daily</string>
+    <string name="reminderCancelDaily">Cancel Reminder Daily</string>
+    <string name="reminderSave">Save Reminder</string>
+    <string name="reminderCancel">Cancle Reminder</string>
+    <string name="langue_settings">Change Langue</string>
+
+</resources>

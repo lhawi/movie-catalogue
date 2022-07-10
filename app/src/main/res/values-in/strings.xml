@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Catalogue Movie</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cari">Cari</string>
+    <string name="nama_movie">Nama Movie</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="year">Year</string>
+    <string name="search">Cari</string>
+    <string name="now_playing">Sedang Tayang</string>
+    <string name="upcoming">Akan Datang</string>
+    <string name="home">Beranda</string>
+    <string name="detail">Detail</string>
+    <string name="share">Bagikan</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="Overview">Ringkasan Cerita</string>
+    <string name="favorite">Favorit</string>
+
+    <string name="add">Tambah ke Favorit</string>
+    <string name="remove">Hapus dari Favorit</string>
+    <string name="appwidget_text">FILM FAVORITE</string>
+    <string name="empty_text">DATA KOSONG</string>
+
+    <string name="reminderSaveDaily">Simpan Reminder Daily</string>
+    <string name="reminderCancelDaily">Batal Reminder Daily</string>
+    <string name="reminderSave">Simpan Reminder</string>
+    <string name="reminderCancel">Batal Reminder</string>
+
+    <string name="langue_settings">Ubah Bahasa</string>
+</resources>

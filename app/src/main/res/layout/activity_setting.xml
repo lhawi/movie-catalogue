@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".SettingActivity">
+
+    <Switch
+        android:id="@+id/dailyReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Daily Reminder"
+        android:textSize="15sp" />
+
+    <include layout="@layout/view_horizontal_divider_gray" />
+
+    <Switch
+        android:id="@+id/relaseReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Release Reminder"
+        android:textSize="15sp" />
+
+    <include layout="@layout/view_horizontal_divider_gray" />
+
+</LinearLayout>

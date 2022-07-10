@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hawi.lukman.cataloguemovieuiux">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.hawi.lukman.cataloguemovieuiux.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.hawi.lukman.cataloguemovieuiux.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".search.DetailActivity" />
+        <activity android:name=".search.SearchActivity" />
+
+        <provider
+            android:name=".provider.FavoriteProvider"
+            android:authorities="com.hawi.lukman.cataloguemovieuiux"
+            android:exported="true"
+            android:readPermission="com.hawi.lukman.cataloguemovieuiux.READ_DATABASE"
+            android:writePermission="com.hawi.lukman.cataloguemovieuiux.WRITE_DATABASE" />
+
+        <receiver android:name=".widget.MovieStackWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/movie_stack_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".reminder.DailyReminder"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".reminder.ReleaseReminder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".SettingActivity"></activity>
+    </application>
+
+</manifest>
